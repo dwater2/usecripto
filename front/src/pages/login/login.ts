@@ -9,6 +9,8 @@ import {RegisterPage} from "../register/register";
 })
 export class LoginPage {
 
+  email: string;
+
   constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
     this.menu.swipeEnable(false);
   }
@@ -20,7 +22,10 @@ export class LoginPage {
 
   // login and go to home page
   login() {
-    this.nav.setRoot(HomePage);
+    this.nav.setRoot(HomePage,{
+      email: this.email
+    });
+
   }
 
   forgotPass() {

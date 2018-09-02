@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {NavController, PopoverController} from "ionic-angular";
+import {NavController, PopoverController, NavParams} from "ionic-angular";
 import {Storage} from '@ionic/storage';
 
 import {NotificationsPage} from "../notifications/notifications";
@@ -20,7 +20,10 @@ export class HomePage {
     date: new Date().toISOString()
   }
 
-  constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController) {
+  constructor(private storage: Storage, public nav: NavController, 
+    public popoverCtrl: PopoverController, private navParams: NavParams) {
+      let email = navParams.get('email');
+      console.log("Email: " + email);
   }
 
   ionViewWillEnter() {
