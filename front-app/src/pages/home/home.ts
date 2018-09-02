@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SendPage } from "../send/send";
+import { ReceivePage } from "../receive/receive";
 
 @Component({
   selector: 'page-home',
@@ -15,6 +16,10 @@ export class HomePage {
 
   send(){
     this.nav.push(SendPage);
+  }
+
+  receive(){
+    this.nav.push(ReceivePage);
   }
 
 }

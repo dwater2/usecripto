@@ -1,35 +1,29 @@
-<ion-content>
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Realizar Transferência
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="animated fadeIn common-bg" text-center>
+    <ion-card no-margin margin-bottom class="full-width no-shadow">
+        <ion-card-title>
+          Saldo total
+        </ion-card-title>
+  
+        <ion-card-content class="font-14">
+          R$ 0,00
+        </ion-card-content>  
+    </ion-card>
     <ion-item>
-        <ion-card no-margin margin-bottom class="full-width" style="text-align: center">
-            <ion-card-title style="text-align: center">
-                Saldo total
-            </ion-card-title>
-            <ion-card-content>
-                R$ 0,00
-            </ion-card-content>  
-        </ion-card>
+        <ion-label color="dark" floating>Para:</ion-label>
+        <ion-input></ion-input>
+        <ion-img width="20" height="20" src="assets/imgs/qr.png" item-right item-middle></ion-img>
     </ion-item>
     
-    <ion-grid>
-        <ion-item>
-          <ion-row>
-            <ion-col col-12>
-                <ion-label color="dark" floating>Para:</ion-label>
-                <ion-input name="hash_destinatario"></ion-input>
-            </ion-col>
-          </ion-row>
-        </ion-item>
-
-        <ion-item>
-          <ion-row>
-              <ion-col col-12>
-                  <ion-label color="dark" floating>Quantidade:</ion-label>
-                  <ion-input name="valor"></ion-input>
-              </ion-col>
-          </ion-row>
-        </ion-item>
-    </ion-grid>
+    <ion-item>
+        <ion-label color="dark" floating>Quantidade:</ion-label>
+        <ion-input></ion-input>
+        <ion-icon name="arrow-round-forward" item-right item-middle></ion-icon>
+    </ion-item>
 </ion-content>
-
-
-    

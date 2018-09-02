@@ -1,25 +1,46 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Receber Depósito
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title text-center>
+          Histórico Transações
+        </ion-title>
+    </ion-navbar>
 </ion-header>
-
+    
 <ion-content>
-  <ion-list>
-    <ion-list-header>
-    </ion-list-header>
-    <ion-item>
-        <ion-grid>
-          <ion-row align-items-center>
-            <ion-col col-md-12>
-              <div>
-                <ion-img width="200" height="200" src="assets/imgs/qr.png"></ion-img>
-              </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-    </ion-item>
-  </ion-list>
+    <ion-list>
+        <ion-list-header>
+        </ion-list-header>
+        <ion-item>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-xs-10>
+                        <span class="font-12">TR. BLOCKCHAIN</span><br />
+                        <span class="font-12">02 Set 2018  15:00 PM</span><br />
+                        <span class="font-12">Rec. de - 0x92f...d9bB5</span>
+                    </ion-col>
+                    <ion-col col-xs-2 text-right>
+                        <span ion-text color="green">15,00</span>
+                    </ion-col>
+                </ion-row>
+               
+            </ion-grid>
+        </ion-item>
+        <ion-item>
+            <ion-grid>
+                <ion-row style="vertical-align:middle">
+                    <ion-col col-xs-10>
+                        <span class="font-12">CR. BLOCKCHAIN</span><br />
+                        <span class="font-12">02 Set 2018  16:03 PM</span><br />
+                        <span class="font-12">Rec. de - 0x10f...d2bB7</span>
+                    </ion-col>
+                    <ion-col col-xs-2 text-right>
+                        <span ion-text color="danger">5,00</span>
+                    </ion-col>
+                </ion-row>
+               
+            </ion-grid>
+        </ion-item>
+        
+    </ion-list>
 </ion-content>
+    
