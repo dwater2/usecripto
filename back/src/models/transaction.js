@@ -1,9 +1,10 @@
-function Transaction(connection){
-    this._connection = connection;
+function Transaction(){
 }
 
-Transaction.prototype.saveTransaction = function(transaction, callback){
-    this._connection.query('INSERT INTO transacoes SET ? ', transaction, callback);
+Transaction.prototype.saveTransaction = function(app, de, para, valor, data){
+    var userModel = new app.src.models.user();
+    userModel.incrementaSaldo(app, de, valor, data);
+    userModel.decrementaSaldo(app, para, valor, data);
 }
 
 module.exports = function(){
