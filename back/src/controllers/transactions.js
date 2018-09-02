@@ -8,3 +8,8 @@ module.exports.executeTransaction = function(app, req, res) {
     var transactionModel = new app.src.models.transaction();
     res.send(transactionModel.saveTransaction(app, de, para, valor, data));
 }
+
+module.exports.getTransactions = function(app, req, res) {
+    var transactionModel = new app.src.models.transaction();
+    res.send(transactionModel.getTransactions(app, req.params.carteira));
+}
