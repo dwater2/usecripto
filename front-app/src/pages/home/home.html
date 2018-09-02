@@ -4,14 +4,30 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding class="animated fadeIn common-bg" style="text-align: center;">
+
+  <ion-card no-margin margin-bottom class="full-width">
+      <ion-card-title>
+        Saldo total
+      </ion-card-title>
+
+      <ion-card-content>
+        R$ 0,00
+      </ion-card-content>  
+  </ion-card>
+
+  <ion-card no-margin margin-bottom class="full-width">
+      <ion-card-title style="text-align: center">
+          Operações
+      </ion-card-title>
+
+      <button ion-button icon-start color="dark" tappable (click)="send()">
+        <ion-icon name="arrow-round-up"></ion-icon>
+        Enviar
+      </button>
+      <button ion-button icon-start color="dark" tappable (click)="receive()">
+        <ion-icon name="arrow-round-down"></ion-icon>
+        Receber
+      </button>
+  </ion-card>
 </ion-content>
