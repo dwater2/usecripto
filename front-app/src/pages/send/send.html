@@ -7,28 +7,30 @@
         </ion-card-title>
         <ion-card-content>
             R$ 0,00
-          </ion-card-content>  
+        </ion-card-content>  
     </ion-card>
     
     <ion-list>
         <ion-grid>
-            <ion-row>
-              <ion-col col-12>
-                  <ion-item>
-                    <ion-label color="dark" floating>De:</ion-label>
-                    <ion-input name="hash_remetente"></ion-input>
-                  </ion-item>
-              </ion-col>
-            </ion-row>
 
-            <ion-row>
+            <ion-item>
+              <ion-row>
                 <ion-col col-12>
-                    <ion-item>
-                      <ion-label color="dark" floating>Para:</ion-label>
-                      <ion-input name="hash_destinatario"></ion-input>
-                    </ion-item>
+                    <ion-label color="dark" floating>Para:</ion-label>
+                    <ion-input name="hash_destinatario"></ion-input>
+                    <ion-img width="200" height="200" src="assets/imgs/qr.png"></ion-img>
                 </ion-col>
-            </ion-row>
+              </ion-row>
+            </ion-item>
+
+            <ion-item>
+              <ion-row>
+                  <ion-col col-12>
+                      <ion-label color="dark" floating>Quantidade:</ion-label>
+                      <ion-input name="valor"></ion-input>
+                  </ion-col>
+              </ion-row>
+            </ion-item>
         </ion-grid>
     </ion-list>
 </ion-content>
