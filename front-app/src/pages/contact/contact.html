@@ -8,10 +8,19 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+    <ion-list-header>Siga-nos no Twitter</ion-list-header>
+
+    <ion-footer>
+      <div class="input-wrap">
+        <button ion-button clear icon-only item-right>
+          <ion-icon name="md-happy"></ion-icon>
+        </button>
+        <textarea #chat_input placeholder="Digite sua mensagem" style="margin: 0px;margin-top: 11px;width: 70%;height: 35px;flex: 1;border: 0;border-bottom: 1px #387ef5;border-style: solid;"></textarea>
+        <button ion-button clear icon-only item-right>
+          <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+        </button>
+      </div>
+    </ion-footer>
+
   </ion-list>
 </ion-content>
