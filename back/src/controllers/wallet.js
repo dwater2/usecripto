@@ -1,10 +1,10 @@
-module.exports.getById = function(application, req, res) {
-    var connection = application.config.dbConnection();
-    console.log(application.app);
-    var walletModel = new application.models.wallet(connection);
-    var user_id = req.param.user_id;
+module.exports.getById = function(app, req, res) {
+    var connection = app.config.dbConnection();
+    var walletModel = new app.src.models.wallet(connection);
+    var user_id = req.params.user_id;
 
     walletModel.getById(user_id, function(error, result){
-        res.send(result);
+        console.log(result);
+       res.send(result);
     });
 }

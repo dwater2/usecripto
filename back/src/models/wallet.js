@@ -1,11 +1,12 @@
-function wallet(connection){
+function Wallet(connection){
     this._connection = connection;
 }
 
-wallet.prototype.getById = function(user_id, callback){
-    this._connection.query('SELECT * FROM carteiras WHERE id_usuario = '+ user_id, callback);
+Wallet.prototype.getById = function(user_id, callback){
+    console.log('SELECT * FROM carteiras WHERE id_usuario = '+ user_id);
+    this._connection.query('SELECT * FROM carteiras', callback);
 }
 
 module.exports = function(){
-    return wallet;
+    return Wallet;
 }
