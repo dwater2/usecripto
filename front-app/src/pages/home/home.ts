@@ -6,6 +6,7 @@ import { SendPage } from "../send/send";
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
 
   constructor(public nav: NavController) {
