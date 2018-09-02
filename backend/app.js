@@ -21,7 +21,8 @@ app.get('/',function(req,res){
 });
 
 var createDataBase = function(){
-    var query = 'create database use cripto;';
+    var query = 'create database cripto;';
+    query += 'use cripto;';
     query += 'create table usuarios (id int not null primary key auto_increment, nome varchar(255) not null);';
     query += 'create table carteiras (hash varchar(42) not null primary key, id_usuario int not null ,saldo float(8,2) not null, foreign key (id_usuario) references usuarios(id));';
     query += 'create table transacoes (id int primary key auto_increment, valor float(8,2) not null, hash_remetente varchar(42) not null, hash_destinatario varchar(42) not null, data datetime not null default now());';
