@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dwater2/usecripto#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
   }
 }
